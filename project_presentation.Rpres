@@ -1,0 +1,50 @@
+Health Stats Calculator
+========================================================
+Author: Paul Comeau
+Date: 5/23/2015
+
+<small>
+Developing Data Products     
+Project Presentation
+</small>
+
+
+========================================================
+
+Monitor Your Health Stats 
+--
+
+- Intutitve User Interface
+- Consise Output
+- Provides:
+- Basal Metabolic Rate (BMR)
+ - Body Mass Index (BMI)
+ - Ideal Weight Range
+ - Total Daily Energy Expediture
+
+Example
+========================================================
+
+```{r, echo=FALSE}
+weight <- 155
+height <- 65
+age <- 30
+bmi <- round((weight*703)/(height^2),digits=2)
+bmr <- 655 + (4.35*weight) + (4.7*height) - (4.7*age)
+```
+For female, age `r age`, Weight `r weight`, height `r height`
+
+Resulting BMI `r bmi`
+
+Resulting BMR `r bmr`
+
+
+Intuitive User Interface
+========================================================
+
+![alt text](healthStats.png)
+
+Start Using the Health Stats Calculator NOW !!
+========================================================
+
+https://pcomeau.shinyapps.io/project/
